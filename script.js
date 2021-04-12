@@ -45,23 +45,28 @@ for (i = 1; i <= 100; i++) {
     var multiplo3e5 = i % 3 === 0 && i % 5 === 0;
 
     if (i % 3 === 0 && i % 5 === 0) {
+        document.writeln("FizzBuzz");
         x3e5.push(1);
 
     } else if (i % 3 === 0) {
+        document.writeln("Fizz");
         x3.push(1);
 
     } else if (i % 5 === 0) {
+        document.writeln("Buzz");
         x5.push(1);
+
+    } else {
+        document.writeln(i);
     }
 
     sequence.push(i)
 }
 
 console.log(sequence);
-
 document.getElementById("nonmultipli").innerHTML = sequence.length;
-document.getElementById("Fizz").innerHTML = x3.length + " Fizz (multipli di 3)";
-document.getElementById("Buzz").innerHTML = x5.length + " Buzz (multipli di 5)";
-document.getElementById("FizzBuzz").innerHTML = x3e5.length + " FizzBuzz (multipli sia di 3 che di cinque)";
+document.getElementById("Fizz").innerHTML = (x3.length + " Fizz (multipli di 3)");
+document.getElementById("Buzz").innerHTML = (x5.length + " Buzz (multipli di 5)");
+document.getElementById("FizzBuzz").innerHTML = (x3e5.length + " FizzBuzz (multipli sia di 3 che di cinque)");
 
 
