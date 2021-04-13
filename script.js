@@ -44,15 +44,15 @@ for (i = 1; i <= 100; i++) {
     var multiplo5 = i % 5 === 0;
     var multiplo3e5 = i % 3 === 0 && i % 5 === 0;
 
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (multiplo3e5) {
         document.writeln("FizzBuzz");
         x3e5.push(1);
 
-    } else if (i % 3 === 0) {
+    } else if (multiplo3) {
         document.writeln("Fizz");
         x3.push(1);
 
-    } else if (i % 5 === 0) {
+    } else if (multiplo5) {
         document.writeln("Buzz");
         x5.push(1);
 
